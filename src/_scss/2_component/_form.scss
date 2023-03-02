@@ -1,0 +1,25 @@
+.c-form {
+    margin: 92px 50px 0;
+
+    @include tab {
+        margin: 80px 50px 0;
+    }
+
+    .c-form__link {
+        height: 283px;
+        color: #000;
+        font-family: $special-fonts2;
+        font-weight: 300;
+        font-size: 4.8rem;
+        border: 1px solid #000;
+        display: flex;
+        letter-spacing: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c-form__text {
+        margin-left: -5px;
+        margin-top: 7px;
+    }
+}

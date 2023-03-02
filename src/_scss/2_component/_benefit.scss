@@ -1,0 +1,71 @@
+.c-benefit {
+    padding: 120px 50px 0;
+
+    @include tab {
+        max-width: 767px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @include sp {
+        max-width: 375px;
+        padding: 80px 25px 0;
+    }
+
+    .c-benefit__heading {
+        font-size: 3.4rem;
+        font-weight: 400;
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+
+        @include pconly {
+            transform: translate(21px, 1px);
+        }
+
+        @include sp {
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+    }
+
+    .c-benefit__headhighlight {
+        color: #252a6d;
+        font-weight: 400;
+        font-size: 4.6rem;
+        font-family: $secondary-fonts;
+        text-align: center;
+        letter-spacing: 1px;
+
+        @include pc {
+            display: block;
+        }
+
+        @include sp {
+            font-size: 1.7rem;
+        }
+    }
+
+    .c-benefit__welcome {
+        font-family: $special-fonts2;
+        color: #000;
+        font-size: 4.8rem;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 17px;
+        margin-bottom: 77px;
+        letter-spacing: 4px;
+        transform: translateX(19px);
+
+        @include tab {
+            transform: none;
+        }
+
+        @include sp {
+            font-size: 1.2rem;
+            letter-spacing: 0.7px;
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+    }
+}

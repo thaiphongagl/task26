@@ -1,0 +1,128 @@
+.c-access {
+    padding: 54px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tab {
+        padding: 40px 0 0;
+        flex-direction: column;
+    }
+
+    .c-access__map {
+        flex: 0 1 50%;
+        height: 701px;
+
+        @include tab {
+            flex: unset;
+            width: 100%;
+            height: 390px;
+        }
+    }
+
+    .c-access__src {
+        width: 100%;
+        height: 100%;
+    }
+
+    .c-access__infor {
+        background-color: $secondary-color;
+        padding: 132px 0 0;
+        flex: 0 1 50%;
+
+        @include tab {
+            flex: unset;
+            width: 100%;
+            min-height: 541px;
+            padding: 50px;
+        }
+    }
+
+    .c-accsess__wrapper {
+        color: #000;
+    }
+
+    .c-access__title {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .c-access__heading {
+        padding-left: 15px;
+        padding-top: 2px;
+
+        @include tab {
+            padding-left: 45px;
+            padding-top: 0;
+        }
+    }
+
+    .c-access__line {
+        width: 74px;
+        height: 1px;
+        margin-top: 16px;
+        margin-left: 55px;
+
+        @include tab {
+            margin-left: inherit;
+        }
+    }
+
+    .c-access__des {
+        font-size: 2.8rem;
+        font-weight: 300;
+        margin-top: 24px;
+        transform: translateX(-30px);
+
+        @include tab {
+            transform: none;
+        }
+    }
+
+    .c-access__details {
+        font-size: 2.5rem;
+        margin: 86px auto 0;
+        width: fit-content;
+
+        @include pconly {
+            margin: 86px auto 0 182px;
+        }
+
+        @include pc {
+            font-size: 2rem;
+        }
+
+        @include tab {
+            margin: 40px auto 0;
+        }
+    }
+
+    .c-access__detail {
+        margin-bottom: 12px;
+    }
+
+    .c-access__label {
+        color: #fff;
+        background-color: #565f64;
+        width: 120px;
+        height: 47px;
+        display: inline-block;
+        margin-right: 17px;
+        text-align: center;
+        line-height: 47px;
+    }
+
+    .c-access__content {
+        display: inline-block;
+    }
+
+    .c-access__note {
+        font-size: 1.5rem;
+        margin-top: 13px;
+        margin-left: calc(44.4% - 96px);
+
+        @include pc {
+            margin: 0 auto;
+            width: fit-content;
+        }
+    }
+}

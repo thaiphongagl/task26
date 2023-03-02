@@ -1,0 +1,343 @@
+.c-worries {
+    padding: 77px 50px 0;
+
+    @include tab {
+        margin: 0 auto;
+        max-width: 767px;
+    }
+
+    @include sp {
+        max-width: 375px;
+        padding: 47px 25px 0;
+    }
+
+    .c-worries__heading {
+        font-size: 3.6rem;
+        font-weight: 400;
+        color: #000;
+        text-align: center;
+        transform: translateX(16px);
+        font-feature-settings: "falt";
+
+        @include tab {
+            transform: none;
+        }
+
+        @include sp {
+            font-size: 1.5rem;
+        }
+    }
+
+    .c-worries__blocks {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1546px;
+        width: 100%;
+        margin: -29px auto 0;
+        padding-left: 25px;
+
+        @include pc {
+            padding-left: 0;
+        }
+
+        @include tab {
+            flex-direction: column;
+            padding-left: 0;
+        }
+
+        :nth-child(1) {
+            .c-worries__id {
+                transform: translateY(1px);
+            }
+
+            .c-worries__question {
+                transform: translateY(1px);
+            }
+
+            @include tab {
+                .c-worries__id {
+                    transform: none;
+                }
+
+                .c-worries__question {
+                    transform: none;
+                }
+            }
+
+            @include sp {
+                .c-worries__id {
+                    transform: translate(-2px, 2px);
+                }
+            }
+        }
+
+        :nth-child(2) {
+            .c-worries__idcase {
+                transform: translateX(8px);
+            }
+
+            .c-worries__questionnote {
+                transform: translate(7px, 1px);
+            }
+
+            .c-worries__note {
+                transform: translate(-2px, -1px);
+                letter-spacing: -1.2px;
+            }
+
+            @include tab {
+                .c-worries__id {
+                    padding-left: 400px;
+                }
+
+                .c-worries__idcase {
+                    transform: none;
+                }
+
+                .c-worries__case {
+                    padding-left: 380px;
+                }
+
+                .c-worries__questionnote {
+                    transform: none;
+                }
+
+                .c-worries__note {
+                    transform: none;
+                }
+            }
+
+            @include sp {
+                .c-worries__id {
+                    padding-left: unset;
+                    left: 93%;
+                    margin-top: -19px;
+                }
+
+                .c-worries__case {
+                    padding-left: unset;
+                    left: 93%;
+                    margin-left: 0;
+                    top: 56.4%;
+                }
+
+                .c-worries__questionnote {
+                    margin-top: 1px;
+                }
+
+                .c-worries__note {
+                    padding: 2px 14px 3px 11px;
+                    letter-spacing: -1.6px;
+                }
+            }
+        }
+
+        :nth-child(3) {
+            .c-worries__idcase {
+                transform: translateX(16px);
+            }
+
+            .c-worries__questionnote {
+                transform: translate(15px, 1px);
+            }
+
+            .c-worries__question {
+                letter-spacing: -1.6px;
+            }
+
+            .c-worries__note {
+                transform: translate(-3px, -1px);
+                letter-spacing: -1.2px;
+            }
+
+            @include tab {
+                .c-worries__idcase {
+                    transform: none;
+                }
+
+                .c-worries__questionnote {
+                    transform: none;
+                }
+
+                .c-worries__note {
+                    transform: none;
+                }
+            }
+
+            @include sp {
+                .c-worries__id {
+                    margin-top: -15px;
+                    padding-left: 24px;
+                }
+
+                .c-worries__questionnote {
+                    margin-top: 0;
+                }
+
+                .c-worries__note {
+                    top: -10px;
+                    right: -15px;
+                    padding: 2px 9px 4px 11px;
+                    letter-spacing: -0.9px;
+                }
+            }
+        }
+    }
+
+    .c-worries__block {
+        width: 31.19%;
+
+        @include tab {
+            width: 100%;
+
+            &:nth-child(2) {
+                .c-worries__question {
+                    &::before {
+                        left: 75%;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .c-worries__note {
+                    left: -12px;
+                }
+            }
+        }
+
+        @include sp {
+            &:nth-child(2) {
+                .c-worries__question {
+                    &::before {
+                        left: 66%;
+                        border-bottom: 31px solid transparent;
+                        border-top: 13px solid transparent;
+                        border-left: 14px solid #000;
+                        transform: rotate(45deg);
+                    }
+                }
+
+                .c-worries__note {
+                    left: 1px;
+                }
+            }
+        }
+
+    }
+
+    .c-worries__idcase {
+        position: relative;
+        width: fit-content;
+
+    }
+
+    .c-worries__id {
+        font-weight: 700;
+        font-size: 21.3rem;
+        color: $secondary-color;
+        font-family: $special-fonts;
+        position: relative;
+        padding-left: 22px;
+
+        @include sp {
+            font-size: 14.8rem;
+        }
+    }
+
+    .c-worries__case {
+        position: absolute;
+        font-family: $special-fonts;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: #c7c7c7;
+        width: 100%;
+        text-align: center;
+        top: 55.5%;
+        letter-spacing: 6.3px;
+        margin-left: 14px;
+
+        @include sp {
+            font-size: 1.7rem;
+            letter-spacing: 3.9px;
+            top: 56.3%;
+            margin-left: 11px;
+        }
+    }
+
+    .c-worries__questionnote {
+        position: relative;
+    }
+
+    .c-worries__question {
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 700;
+        background-color: #000;
+        border-radius: 8px;
+        height: 124px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-feature-settings: "falt";
+        margin-top: -56px;
+        letter-spacing: -1.3px;
+        padding: 0 10px;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -23%;
+            right: 64.9%;
+            left: auto;
+            width: 0;
+            height: 0;
+            border-bottom: 30px solid transparent;
+            border-top: 37px solid transparent;
+            border-left: 30px solid #000;
+
+            @include tab {
+                right: 75%;
+            }
+
+            @include sp {
+                right: 62%;
+                border-bottom: 0 solid transparent;
+                border-top: 40px solid transparent;
+            }
+        }
+
+        @include sp {
+            font-size: 1.7rem;
+            height: 87px;
+            margin-top: -38px;
+            margin-left: 6px;
+            width: 101%;
+            border-radius: 5px;
+        }
+    }
+
+    .c-worries__note {
+        position: absolute;
+        font-family: $secondary-fonts;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: #7a89a8;
+        text-align: center;
+        top: -12px;
+        right: -12px;
+        padding: 2px 10px 5px;
+        border-radius: 20px;
+        letter-spacing: -1.8px;
+        width: 212px;
+
+        @include sp {
+            font-size: 1.3rem;
+            top: -9px;
+            right: -12px;
+            padding: 3px 11px;
+            width: 146px;
+        }
+    }
+}

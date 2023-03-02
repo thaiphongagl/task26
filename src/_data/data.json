@@ -1,0 +1,308 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "Home",
+        "url": "/"
+      }
+    ]
+  },
+  "worries": [
+    {
+      "id": "01",
+      "question": "子育てにはどんな家が良いんだろう？"
+    },
+    {
+      "id": "02",
+      "question": "理想の家って実現できるの？",
+      "note": "いろいろとこだわった"
+    },
+    {
+      "id": "03",
+      "question": "暮らしのスタイルがイメージできない",
+      "note": "家は建てたいけど"
+    }
+  ],
+  "benefits": [
+    {
+      "benefitId": 1,
+      "benefitHeading": "実物を見て触って<span class='c-box__highlight'>体感</span>できます!",
+      "benefitDesc": "カタログや資料だけではなく、高気密・高断熱の木の住まいや、家事動線や収納スペースの女性目線で叶った工夫など、実際に見て触ってご体感いただけます。 ",
+      "benefitImg": "./assets/img/benefits__articleimg1.jpg",
+      "benefitImgSp": "./assets/img/benefits__articleimg1-sp.jpg",
+      "benefitNumberBullet": "./assets/img/benefits__numberbullet1.svg"
+    },
+    {
+      "benefitId": 2,
+      "benefitHeading": "土地情報<span class='c-box__highlight'>1000件以上</span>が見放題!",
+      "benefitDesc": "愛媛県の最新の土地情報から、学区・最寄りの駅などご希望の条件でお好きな土地をご覧いただけます。さらに、地盤予測や付帯工事費なども含め、建てた後も安心して暮らせる総合的な土地のアドバイスをいたします。",
+      "benefitImg": "./assets/img/benefits__articleimg2.jpg",
+      "benefitImgSp": "./assets/img/benefits__articleimg2-sp.jpg",
+      "benefitNumberBullet": "./assets/img/benefits__numberbullet2.svg"
+    },
+    {
+      "benefitId": 3,
+      "benefitHeading": "お客様に合った<span class='c-box__highlight'>住宅ローン</span>を診断!",
+      "benefitDesc": "住宅ローンアドバイザーの資格を持ったスタッフが、住宅ローン提携5大金融機関からお客様に合った適正住宅ローンを診断いたします。",
+      "benefitImg": "./assets/img/benefits__articleimg3.jpg",
+      "benefitImgSp": "./assets/img/benefits__articleimg3-sp.jpg",
+      "benefitNumberBullet": "./assets/img/benefits__numberbullet3.svg"
+    }
+  ],
+  "recs": [
+    {
+      "recId": 1,
+      "recImg": "./assets/img/recs__recimg1.jpg",
+      "recImgSp": "./assets/img/recs__recimg1-sp.jpg",
+      "recHeading": "豊富な+FUNのオプション",
+      "recDesc": "1,100万円の家をベースに、ライフスタイルにあった+FUNのオプションを組み合わせられます。価格が決まった明朗なシステムで、GOOD DESIGN賞を受賞。"
+    },
+    {
+      "recId": 2,
+      "recImg": "./assets/img/recs__recimg2.jpg",
+      "recImgSp": "./assets/img/recs__recimg2-sp.jpg",
+      "recHeading": "シンプルな四角い外観",
+      "recDesc": "住む方の生活に馴染むよう、シンプルでムダを削ぎ落とした四角い家。凹凸のないレイアウトで、室内も広々した空間を実現。"
+    },
+    {
+      "recId": 3,
+      "recImg": "./assets/img/recs__recimg3.jpg",
+      "recImgSp": "./assets/img/recs__recimg3-sp.jpg",
+      "recHeading": "ガルバリウム鋼板の外壁・屋根",
+      "recDesc": "外壁・屋根に使われているガルバリウム鋼板は、無骨で美しいZERO-CUBEの外観の特徴。耐久・耐熱性など機能面に優れた、高品質の素材です。"
+    },
+    {
+      "recId": 4,
+      "recImg": "./assets/img/recs__recimg4.jpg",
+      "recImgSp": "./assets/img/recs__recimg4-sp.jpg",
+      "recHeading": "家族を感じるリビング",
+      "recDesc": "1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。"
+    }
+  ],
+  "designs": [
+    {
+      "designId": 1,
+      "designImg": "./assets/img/design__slick01.jpg"
+    },
+    {
+      "designId": 2,
+      "designImg": "./assets/img/design__slick02.jpg"
+    },
+    {
+      "designId": 3,
+      "designImg": "./assets/img/design__slick03.jpg"
+    },
+    {
+      "designId": 4,
+      "designImg": "./assets/img/design__slick04.jpg"
+    },
+    {
+      "designId": 5,
+      "designImg": "./assets/img/design__slick05.jpg"
+    },
+    {
+      "designId": 6,
+      "designImg": "./assets/img/design__slick06.jpg"
+    }
+  ],
+  "planImages": [
+    {
+      "planImageId": 1,
+      "planImageUrl": "./assets/img/plan__image1f.jpg",
+      "planImageUrlSp": "./assets/img/plan__image1f-sp.jpg",
+      "planImageLabel": "1F"
+    },
+    {
+      "planImageId": 2,
+      "planImageUrl": "./assets/img/plan__image2f.jpg",
+      "planImageUrlSp": "./assets/img/plan__image2f.jpg",
+      "planImageLabel": "2F"
+    }
+  ],
+  "planInfors": [
+    {
+      "planInforId": 1,
+      "planInforDesc": "1階床面積 　192.53㎡（58.24坪）"
+    },
+    {
+      "planInforId": 2,
+      "planInforDesc": "2階床面積　139.01㎡（42.05坪）"
+    },
+    {
+      "planInforId": 3,
+      "planInforDesc": "延床面積　331.54㎡（100.29坪）"
+    }
+  ],
+  "planTableDatas": [
+    {
+      "planTableId": 1,
+      "planTableHead": "商品プラン",
+      "planTableData": "ZERO-CUBE"
+    },
+    {
+      "planTableId": 2,
+      "planTableHead": "構造",
+      "planTableData": "木造2階建て"
+    },
+    {
+      "planTableId": 3,
+      "planTableHead": "設備・仕様",
+      "planTableData": [
+        {
+          "planSubId": 1,
+          "planLabel": "W断熱/TOPS工法"
+        },
+        {
+          "planSubId": 2,
+          "planLabel": "無垢材・自然素材"
+        },
+        {
+          "planSubId": 3,
+          "planLabel": "高性能住宅"
+        },
+        {
+          "planSubId": 4,
+          "planLabel": "玄関共有タイプ"
+        },
+        {
+          "planSubId": 5,
+          "planLabel": "防音構造床 "
+        }
+      ]
+    },
+    {
+      "planTableId": 4,
+      "planTableHead": "空間",
+      "planTableData": [
+        {
+          "planSubId": 1,
+          "planLabel": "二世帯・多世帯"
+        },
+        {
+          "planSubId": 2,
+          "planLabel": "1、2階リビング"
+        },
+        {
+          "planSubId": 3,
+          "planLabel": "吹抜け"
+        }
+      ]
+    }
+  ],
+  "finances": [
+    "借入金　・・・・・・・・・・3,400 万円",
+    "ボーナス払い・・・・・・・・・・0 万円",
+    "3 年固定金利・・・・・・・・・・0.725％",
+    "返済期間・・・・・・・・・・・・・35 年"
+  ],
+  "steps": [
+    {
+      "stepId": 1,
+      "stepIcon": "./assets/img/web__stepweb.svg",
+      "stepTitle": "WEB予約",
+      "stepDesc": "入力フォームに必要事項を入力"
+    },
+    {
+      "stepId": 2,
+      "stepIcon": "./assets/img/web__stepvisit.svg",
+      "stepTitle": "ご来場",
+      "stepDesc": "来場されたら受付をお願いします"
+    },
+    {
+      "stepId": 3,
+      "stepIcon": "./assets/img/web__stepform.svg",
+      "stepTitle": "アンケート記入",
+      "stepDesc": "アンケート記入後、丁寧にご説明"
+    },
+    {
+      "stepId": 4,
+      "stepIcon": "./assets/img/web__steptour.svg",
+      "stepTitle": "ご見学・ご説明",
+      "stepDesc": "何でもお気軽に相談してください"
+    },
+    {
+      "stepId": 5,
+      "stepIcon": "./assets/img/web__stepgift.svg",
+      "stepTitle": "特典プレゼント！",
+      "stepDesc": "QUOカードプレゼント"
+    }
+  ],
+  "visitors": [
+    {
+      "visitorId": 1,
+      "visitorIcon": "./assets/img/visitor__window.svg",
+      "visitorDesc1": "常時店内・モデルハウス",
+      "visitorDesc2": "換気中"
+    },
+    {
+      "visitorId": 2,
+      "visitorIcon": "./assets/img/visitor__staffmask.svg",
+      "visitorDesc1": "スタッフの",
+      "visitorDesc2": "マスク着用義務化"
+    },
+    {
+      "visitorId": 3,
+      "visitorIcon": "./assets/img/visitor__visitormask.svg",
+      "visitorDesc1": "お客様へのマスク着用",
+      "visitorDesc2": "をお願いしています"
+    },
+    {
+      "visitorId": 4,
+      "visitorIcon": "./assets/img/visitor__distance.svg",
+      "visitorDesc1": "ソーシャルディスタンス",
+      "visitorDesc2": "（2m）を維持した打合せ"
+    },
+    {
+      "visitorId": 5,
+      "visitorIcon": "./assets/img/visitor__fever.svg",
+      "visitorDesc1": "発熱のあるスタッフ・",
+      "visitorDesc2": "お客様の出社・入店禁止"
+    },
+    {
+      "visitorId": 6,
+      "visitorIcon": "./assets/img/visitor__clean.svg",
+      "visitorDesc1": "こまめな除菌"
+    },
+    {
+      "visitorId": 7,
+      "visitorIcon": "./assets/img/visitor__cough.svg",
+      "visitorDesc1": "咳エチケットを",
+      "visitorDesc2": "徹底しています"
+    },
+    {
+      "visitorId": 8,
+      "visitorIcon": "./assets/img/visitor__handwash.svg",
+      "visitorDesc1": "スタッフ・お客様",
+      "visitorDesc2": "アルコール除菌"
+    },
+    {
+      "visitorId": 9,
+      "visitorIcon": "./assets/img/visitor__meeting.svg",
+      "visitorDesc1": "web設計打合せを",
+      "visitorDesc2": "推奨しています"
+    },
+    {
+      "visitorId": 10,
+      "visitorIcon": "./assets/img/visitor__home.svg",
+      "visitorDesc1": "webおうち相談会を",
+      "visitorDesc2": "推奨しています"
+    }
+  ],
+  "infs": [
+    {
+      "infId": 1,
+      "infLabel": "開催日",
+      "infContent": "8月20日（土）・21日（日）"
+    },
+    {
+      "infId": 2,
+      "infLabel": "時間",
+      "infContent": "10：00 ～ 17：00 ※完全予約制"
+    },
+    {
+      "infId": 3,
+      "infLabel": "開催場所",
+      "infContent": "〒000-0000 愛媛県今治市 000-0"
+    }
+  ]
+}

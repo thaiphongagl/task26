@@ -1,0 +1,296 @@
+.c-finance {
+    padding: 92px 5% 110px;
+    background-color: $secondary-color;
+
+    @include tab {
+        padding: 40px 50px;
+    }
+
+    @include sp {
+        padding: 34px 36px 108px;
+    }
+
+    .c-finance__title {
+        margin: 0 auto;
+        width: fit-content;
+        padding-left: 27px;
+
+        @include sp {
+            padding-left: 0;
+        }
+    }
+
+    .c-finance__heading {
+        letter-spacing: 4px;
+
+        @include sp {
+            letter-spacing: 2px;
+        }
+    }
+
+    .c-finance__line {}
+
+    .c-finance__loan {
+        margin: 57px auto 0;
+        background-color: $main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 64px;
+        width: 409px;
+        transform: translate(17px, 0);
+
+        @include sp {
+            margin: 28px auto 0;
+            width: 205px;
+            height: 33px;
+            transform: none;
+        }
+    }
+
+    .c-finance__loantext {
+        font-size: 3rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+        margin-left: -6px;
+        margin-top: -12px;
+        font-feature-settings: "palt";
+
+        @include sp {
+            font-size: 1.5rem;
+            margin-left: -1px;
+            margin-top: -6px;
+        }
+    }
+
+    .c-finance__content {
+        display: flex;
+        margin: 46px auto 0;
+        max-width: 1274px;
+        width: 100%;
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+
+        @include tab {
+            max-width: 768px;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        @include sp {
+            max-width: 302px;
+            margin: 22px auto 0;
+            row-gap: 28px;
+        }
+    }
+
+    .c-finance__block {
+        background-color: #fff;
+        height: 432px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 0 1 608px;
+
+        @include tab {
+            text-align: center;
+            width: 100%;
+            flex: unset;
+        }
+
+        @include sp {
+            height: 216px;
+        }
+    }
+
+    .c-finance__left {
+        justify-content: space-around;
+        padding: 7% 6.7% 5.3%;
+
+        @include pc {
+            padding: 7% 1.9% 5.3%;
+        }
+
+        @include sp {
+            padding: 18% calc(38.2% - 77px) 5.7% calc(38.2% - 73px);
+            justify-content: unset;
+            align-items: flex-start;
+            row-gap: 18px;
+            letter-spacing: -0.2px;
+        }
+
+    }
+
+    .c-finance__lefttext {
+        font-size: 2.2rem;
+
+        @include pc {
+            font-size: 2rem;
+        }
+
+        @include sp {
+            font-size: 1.1rem;
+        }
+    }
+
+    .c-finance__right {
+        position: relative;
+        display: block;
+        padding: 8% 7% 5.7% 7.1%;
+
+        @include pc {
+            padding: 8% 2% 5.7% 3.1%;
+        }
+
+        @include tab {
+            display: flex;
+        }
+    }
+
+    .c-finance__rightwrapper {
+        @include sp {
+            text-align: left;
+            margin-left: 26px;
+        }
+    }
+
+    .c-finance__rightheading {
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-left: 4px;
+        transform: translateY(1px);
+
+        @include sp {
+            font-size: 1.3rem;
+            margin-left: 0;
+            transform: none;
+        }
+    }
+
+    .c-finance__downpmt {
+        background-color: #7a89a8;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -4.2%;
+        right: -7.2%;
+        text-align: center;
+
+        &::before {
+            content: "";
+            border-left: 8px solid transparent;
+            border-right: 29px solid transparent;
+            border-bottom: 47px solid #7a89a8;
+            position: absolute;
+            top: 68.5%;
+            left: -5%;
+            transform: rotate(242deg);
+        }
+
+        @include pc {
+            top: -10%;
+        }
+
+        @include tab {
+            right: -4.2%;
+        }
+
+        @include sp {
+            height: 100px;
+            width: 100px;
+            right: -7.2%;
+
+            &::before {
+                border-left: 1px solid transparent;
+                border-right: 18px solid transparent;
+                border-bottom: 26px solid #7a89a8;
+                top: 66.5%;
+                left: -6%;
+                transform: rotate(245deg);
+            }
+        }
+    }
+
+    .c-finance__downpmthead {
+        font-size: 3.2rem;
+        display: block;
+        margin-top: 25px;
+        transform: translate(0, 1px);
+
+        @include sp {
+            font-size: 1.6rem;
+            font-family: "Kozuka Gothic Pr6N", sans-serif;
+            margin-top: 12px;
+        }
+    }
+
+    .c-finance__downpmtnumcur {
+        margin-top: -35px;
+        margin-left: -5px;
+
+        @include sp {
+            margin-top: -14px;
+    margin-left: 0px;
+        }
+    }
+
+    .c-finance__downpmtnum {
+        font-size: 9.6rem;
+        
+        @include sp {
+            font-family: "Kozuka Gothic Pr6N", sans-serif;
+            font-size: 4.8rem;
+        }
+    }
+
+    .c-finance__downpmtcurrency {
+        font-size: 3.2rem;
+        transform: translate(4px, -12px);
+        display: inline-block;
+
+        @include sp {
+            font-size: 1.6rem;
+            transform: translate(-1px, -6px);
+        }
+    }
+
+    .c-finance__monthly {
+        color: #7a89a8;
+        font-size: 3.6rem;
+        font-weight: 700;
+        margin-left: 7px;
+        margin-top: 2px;
+
+        @include sp {
+            font-size: 1.8rem;
+        }
+    }
+
+    .c-finance__monthlynum {
+        font-size: 9rem;
+        transform: translate(-10px, -3px);
+        display: inline-block;
+        letter-spacing: -2.5px;
+
+        @include sp {
+            font-size: 4.5rem;
+            letter-spacing: -2.1px;
+        }
+    }
+
+    .c-finance__salesprice {
+        font-size: 2.2rem;
+        margin-top: 15px;
+        margin-left: -3px;
+        font-feature-settings: "palt";
+
+        @include sp {
+            font-size: 1.1rem;
+            transform: translateY(-10px);
+        }
+    }
+}

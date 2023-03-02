@@ -1,0 +1,427 @@
+<%- include('_layouts/layout', { title: 'Coco MGM Design' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Coco MGM Design" />
+  <!-- @@meta -->
+
+  <!-- @content -->
+  <main class="p-home">
+    <!-- Mainvisual -->
+    <!-- *********************************** -->
+    <section class="c-mainvisual">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./assets/img/mainvisual__background-sp.jpg">
+        <img class="c-mainvisual__background" src="./assets/img/mainvisual__background.jpg" alt="「こんな家に住みたい」をカタチにした家" />
+      </picture>
+
+      <div class="c-mainvisual__contentwrapper">
+        <a href="./">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/mainvisual__logo-sp.png">
+            <img class="c-mainvisual__logo" src="./assets/img/mainvisual__logo.png" alt="Coco MGM Design" />
+          </picture>
+        </a>
+        <h1 class="c-mainvisual__heading">
+          「こんな家に住みたい」をカタチにした家
+        </h1>
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/img/mainvisual__status-sp.png">
+          <img class="c-mainvisual__status" src="./assets/img/mainvisual__status.png" alt="「こんな家に住みたい」をカタチにした家" />
+        </picture>
+      </div>
+    </section>
+
+    <div class="p-home__backgroundlined">
+      <!-- Worries -->
+      <!-- *********************************** -->
+      <section class="c-worries">
+        <h2 class="c-worries__heading">
+          家づくりの、こんな不安やお悩みないですか？
+        </h2>
+
+        <div class="c-worries__blocks">
+          <% worries.forEach(worry=> { %>
+            <div class="c-worries__block">
+              <div class="c-worries__idcase">
+                <p class="c-worries__id">
+                  <%= worry.id %>
+                </p>
+                <p class="c-worries__case">case</p>
+              </div>
+              <div class="c-worries__questionnote">
+                <p class="c-worries__question">
+                  <%= worry.question %>
+                </p>
+
+                <% if (worry.note !=undefined) {%>
+                  <p class="c-worries__note">
+                    <%= worry.note %>
+                  </p>
+                  <% } %>
+              </div>
+            </div>
+            <%}); %>
+        </div>
+      </section>
+
+      <!-- Benefit -->
+      <!-- *********************************** -->
+      <section class="c-benefit">
+        <div class="l-container--1200">
+          <h2 class="c-benefit__heading">
+            はじめての家づくりが具体的に進む、<br class="is-only--sp">ご来店の
+            <span class="c-benefit__headhighlight">3 つのメリット</span>
+          </h2>
+          <h2 class="c-benefit__welcome">WELCOME TO MODELHOUSE</h2>
+
+          <div class="c-box">
+            <% benefits.forEach(benefit=> { %>
+              <div class="c-box__item">
+                <div class="c-box__content">
+                  <img src="<%= benefit.benefitNumberBullet %>" alt="<%- benefit.benefitHeading %>"
+                    class="c-box__numberbullet" />
+                  <h3 class="c-box__title">
+                    <%- benefit.benefitHeading %>
+                      <img src="./assets/img/benefits__iconshine.svg" alt="<%- benefit.benefitHeading %>"
+                        class="c-box__iconshine" />
+                  </h3>
+                  <p class="c-box__desc">
+                    <%= benefit.benefitDesc %>
+                  </p>
+                </div>
+
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= benefit.benefitImgSp %>">
+                  <img src="<%= benefit.benefitImg %>" alt="<%- benefit.benefitHeading %>" class="c-box__img" />
+                </picture>
+              </div>
+              <% }) %>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Recs -->
+    <!-- *********************************** -->
+    <section class="c-recs">
+      <div class="c-recs__wrapper">
+          <div class="c-recs__wrapperhide">
+          <div class="c-recs__headinglogo">
+            <div class="c-recs__headinglogoblock">
+              <img class="c-recs__logo" src="./assets/img/recs__logo.png" alt="RECOMMENDED POINT" />
+            </div>
+            <div class="c-recs__headingblock">
+              <h2 class="c-recs__heading">RECOMMENDED POINT</h2>
+              <h3 class="c-recs__subheading">
+                イベント・見学会の<span class="c-recs__highlight">見どころ！</span>
+              </h3>
+            </div>
+          </div>
+  
+          <div class="c-box c-box--4">
+            <% recs.forEach(rec=> { %>
+              <a href="#" class="c-box__item">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= rec.recImgSp %>">
+                  <img src="<%= rec.recImg %>" alt="<%= rec.recHeading %>" class="c-box__img" />
+                </picture>
+  
+                <div class="c-box__content">
+                  <h3 class="c-box__title">
+                    <%= rec.recHeading %>
+                  </h3>
+                  <p class="c-box__desc">
+                    <%= rec.recDesc %>
+                  </p>
+                </div>
+              </a>
+              <% }) %>
+          </div>
+  
+          <img src="./_public/assets/img/recs__logo-sp.png" alt="RECOMMENDED POINT" class="c-recs__logosp">
+        </div>
+      </div>
+    </section>
+
+    <!-- Voucher -->
+    <!-- *********************************** -->
+    <div class="c-voucher">
+      <div class="l-container--1200">
+        <a href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/voucher__img-sp.jpg" />
+            <img src="./assets/img/voucher__img.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント" class="c-voucher__img" />
+          </picture>
+        </a>
+      </div>
+    </div>
+
+    <!-- Design -->
+    <!-- *********************************** -->
+    <section class="c-design">
+      <div class="c-design__slick">
+        <div class="c-design__slickcontainer">
+          <% designs.forEach(design=> { %>
+            <div class="c-design__slickblock">
+              <picture>
+                <source media="(max-width: )" srcset="" />
+                <img src="<%= design.designImg %>" alt="Design" class="c-design__slickimg" />
+              </picture>
+            </div>
+            <% }); %>
+        </div>
+
+        <div class="c-design__slickcontroller">
+          <img src="./assets/img/design__prev.svg" alt="Design" class="c-design__btn c-design__prev" />
+          <img src="./assets/img/design__next.svg" alt="Design" class="c-design__btn c-design__next" />
+        </div>
+      </div>
+
+      <div class="c-design__textvideo">
+        <div class="c-design__text">
+          <h2 class="c-title c-design__heading">DESIGN</h2>
+          <hr class="c-titleline c-design__line" />
+          <h3 class="c-design__sub">
+            シンプルで美しいデザイン、<br />
+            いつまでも・誰にでも愛される空間に。
+          </h3>
+
+          <p class="c-design__desc">
+            長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br />
+            壁の色を白で統一したシンプルな間取り。<br />
+            余計な装飾は施さず、こだわりの家具やインテリアを <br />
+            あなた色に合わせてコーディネートを楽しめる <br />
+            年齢や性別を意識しない誰にでも愛される空間です。
+          </p>
+        </div>
+
+        <div class="c-design__video">
+          <iframe class="c-design__src" src="https://www.youtube.com/embed/GtH-3_jjTvQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan -->
+    <!-- *********************************** -->
+    <section class="c-plan">
+      <div class="c-plan__wrapper l-container--1200">
+        <div class="c-plan__title">
+          <h2 class="c-title c-plan__heading">PLAN</h2>
+          <hr class="c-titleline c-plan__line" />
+        </div>
+
+        <div class="c-plan__images">
+          <% planImages.forEach(planImage=> { %>
+            <div class="c-plan__image">
+              <figure>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= planImage.planImageUrlSp %>" />
+                  <img src="<%= planImage.planImageUrl %>" alt="plan" class="c-plan__src" />
+                </picture>
+                <figcaption class="c-plan__caption">
+                  <span class="c-plan__label">
+                    <%= planImage.planImageLabel %>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <% }) %>
+        </div>
+
+        <div class="c-plan__areas">
+          <% planInfors.forEach(planInfor=> { %>
+            <p class="c-plan__area">
+              <%= planInfor.planInforDesc %>
+            </p>
+            <% }) %>
+        </div>
+
+        <div class="c-plan__detail">
+          <table class="c-plan__table">
+            <tbody class="c-plan__tbody">
+              <% planTableDatas.forEach(planDetail=> { %>
+                <tr class="c-plan__row">
+                  <th class="c-plan__col c-plan__th">
+                    <%= planDetail.planTableHead %>
+                  </th>
+                  <td class="c-plan__col c-plan__td">
+                    <% if (typeof planDetail.planTableData=="object" ) {planDetail.planTableData.forEach(planSubDetail=>
+                      { %>
+                      <a href="#" class="c-plan__links">
+                        <span class="c-plan__link">
+                          <%= planSubDetail.planLabel %>
+                        </span>
+                      </a>
+                      <% })} else { %>
+                        <%= planDetail.planTableData %>
+                          <% } %>
+                  </td>
+                </tr>
+                <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finance -->
+    <!-- *********************************** -->
+    <section class="c-finance">
+      <div class="c-finance__title">
+        <h2 class="c-title c-finance__heading">Finance</h2>
+        <hr class="c-titleline c-finance__line" />
+      </div>
+
+      <div class="c-finance__loan">
+        <span class="c-finance__loantext">
+          3,400万円借入の場合
+        </span>
+      </div>
+
+      <div class="c-finance__content">
+        <div class="c-finance__block c-finance__left">
+          <% finances.forEach(finance=> { %>
+            <p class="c-finance__lefttext">
+              <%=finance%>
+            </p>
+            <% }) %>
+        </div>
+
+        <div class="c-finance__block c-finance__right">
+          <div class="c-finance__rightwrapper">
+            <h3 class="c-finance__rightheading">月々のお支払い</h3>
+            <div class="c-finance__downpmt">
+              <span class="c-finance__downpmthead">頭金
+              </span>
+              <div class="c-finance__downpmtnumcur">
+                <span class="c-finance__downpmtnum">0</span>
+                <span class="c-finance__downpmtcurrency"> 円</span>
+              </div>
+            </div>
+            <p class="c-finance__monthly"><span class="c-finance__monthlynum">91,682</span>円</p>
+            <p class="c-finance__salesprice">土地付建物販売価格　3,400 万円（税込）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web -->
+    <!-- *********************************** -->
+    <section class="c-web">
+      <div class="c-web__top">
+        <h2 class="c-web__heading">WEB来場予約が<span class="c-web__highlight">オススメ！</span></h2>
+        <p class="c-web__description">待ち時間ナシ！混雑をきにせず来場 OK ！</p>
+        <p class="c-web__description">経験豊富なスタッフがしっかりとご対応いたします。</p>
+      </div>
+
+      <div class="c-web__steps">
+        <% steps.forEach(step=> { %>
+          <div class="c-web__step">
+            <div class="c-web__content">
+              <img src="<%= step.stepIcon %>" alt="<%= step.stepTitle %>" class="c-web__icon">
+              <p class="c-web__name">
+                <%= step.stepTitle %>
+              </p>
+              <p class="c-web__desc">
+                <%= step.stepDesc %>
+              </p>
+            </div>
+          </div>
+          <% }) %>
+      </div>
+    </section>
+
+    <!-- Visitor -->
+    <!-- *********************************** -->
+    <section class="c-visitor">
+      <div class="c-visitor__wrapper l-container--1200">
+        <div class="c-visitor__top">
+          <h3 class="c-visitor__heading">
+            <a href="#" class="c-visitor__link">ご来場のお客様へ</a>
+            <span class="c-visitor__head">
+              新型コロナウイルス<br class="is-only--sp">感染症予防対策につきまして
+            </span>
+          </h3>
+          <p class="c-visitor__desc">
+            ウェブココでは新型コロナウイルス<br class="is-only--sp">感染拡大防止のため、対策を講じて<br class="is-only--sp">おりますので安心してご利用ください。
+          </p>
+        </div>
+
+        <div class="c-visitor__bot">
+          <% visitors.forEach(visitor=> { %>
+            <div class="c-visitor__guide">
+              <img src="<%= visitor.visitorIcon %>" alt="<%=visitor.visitorDesc1 %> <%= visitor.visitorDesc2 %>"
+                class="c-visitor__icon">
+              <p class="c-visitor__description">
+                <%= visitor.visitorDesc1 %>
+              </p>
+              <p class="c-visitor__description">
+                <%= visitor.visitorDesc2 %>
+              </p>
+            </div>
+            <% }) %>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visitor -->
+    <!-- *********************************** -->
+    <section class="c-access">
+      <div class="c-access__map">
+        <iframe class="c-access__src"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3306.1262063157424!2d132.99597535318975!3d34.040633567491234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35503ac39140386f%3A0xb82dddfa210ff1cf!2z44GV44GE44GV44GE44GN44Gm5bGL!5e0!3m2!1sja!2s!4v1666241500828!5m2!1sja!2s"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="c-access__infor">
+        <div class="c-accsess__wrapper">
+          <div class="c-access__title">
+            <h2 class="c-title c-access__heading">ACCESS</h2>
+            <hr class="c-titleline c-access__line">
+            <h3 class="c-access__des">完全ご予約制見学会</h3>
+          </div>
+
+          <div class="c-access__details">
+            <% infs.forEach(info=> { %>
+              <div class="c-access__detail">
+                <span class="c-access__label">
+                  <%= info.infLabel %>
+                </span>
+                <p class="c-access__content">
+                  <%= info.infContent %>
+                </p>
+              </div>
+              <% } )%>
+          </div>
+
+          <p class="c-access__note">※車でお越しの際は、ナビで上記住所を設定してください。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voucher -->
+    <!-- *********************************** -->
+    <div class="c-voucher c-voucher--b">
+      <div class="l-container--1200">
+        <a href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="" />
+            <img src="./assets/img/voucher__img.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント" class="c-voucher__img" />
+          </picture>
+        </a>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <!-- *********************************** -->
+    <div class="c-form">
+      <a href="#" class="c-form__link l-container--1200">
+        <span class="c-form__text">CONTACT FORM</span>
+      </a>
+    </div>
+  </main>
+  <!-- @@content -->

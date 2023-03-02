@@ -1,0 +1,148 @@
+.c-recs {
+    padding: 68px 0 0;
+
+    @include sp {
+        padding: 57px 0 0;
+    }
+
+    .c-recs__wrapper {
+        background-color: $secondary-color;
+        max-width: 1740px;
+        margin: 0 auto;
+        padding: 0 50px;
+        position: relative;
+
+        @include sp {
+            padding: 0 12px 24px;
+        }
+    }
+
+    .c-recs__headinglogo {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        gap: 2%;
+        align-items: center;
+        width: calc(100% - 78px * 2);
+        min-height: 300px;
+        transform: translateY(-55%);
+
+        @include tab {
+            justify-content: unset;
+            gap: unset;
+            right: 50px;
+            width: unset;
+        }
+
+        @include sp {
+            right: 7px;
+            transform: translateY(-52%);
+        }
+    }
+
+    .c-recs__headinglogoblock {
+        width: 34%;
+
+        @include tab {
+            width: 0;
+        }
+    }
+
+    .c-recs__logo {
+        margin-left: 28.9%;
+
+        @include tab {
+            display: none;
+        }
+    }
+
+    .c-recs__logosp {
+        display: none;
+
+        @include tab {
+            position: absolute;
+            display: block;
+            width: 293px;
+            left: 60%;
+            top: 91.7%;
+        }
+
+        @include sp {
+            left: 43.3%;
+            width: 213px;
+            top: 87.2%;
+        }
+    }
+
+    .c-recs__headingblock {
+        text-align: end;
+        margin-bottom: -52px;
+        margin-right: -4.2%;
+
+        @include pc {
+            margin-bottom: -65px;
+            margin-right: -9.5%;
+        }
+
+        @include sp {
+            margin-bottom: -22px;
+        }
+    }
+
+    .c-recs__heading {
+        font-size: 8.3rem;
+        color: #000;
+        font-weight: 300;
+        font-family: $special-fonts2;
+        letter-spacing: 7.1px;
+        transform: translate(-8px, 5px);
+
+        @include pc {
+            font-size: 5.6rem;
+        }
+
+        @include tab {
+            font-size: 5.6rem;
+        }
+
+        @include sp {
+            font-size: 3.1rem;
+            letter-spacing: 2.44px;
+            transform: translate(-8px, 6px);
+        }
+    }
+
+
+    .c-recs__highlight {
+        font-weight: 400;
+        font-size: 4.6rem;
+        color: $highlight-color;
+        font-family: $secondary-fonts;
+
+        @include tab {
+            font-size: 3.6rem;
+        }
+
+        @include sp {
+            font-size: 1.7rem;
+            margin-right: 2px;
+        }
+    }
+
+    .c-recs__subheading {
+        font-size: 3.4rem;
+        font-weight: 400;
+        transform: translate(-4px, -4px);
+
+        @include tab {
+            font-size: 3rem;
+        }
+
+        @include sp {
+            font-size: 1.3rem;
+            transform: translate(-1px, 4px);
+            letter-spacing: 0.1px;
+        }
+    }
+
+}

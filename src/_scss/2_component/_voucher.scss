@@ -1,0 +1,16 @@
+.c-voucher {
+    padding: 119px 50px 0;
+
+    @include sp {
+        padding: 61px 28px 0;
+    }
+}
+
+.c-voucher--b {
+    @extend .c-voucher ;
+    padding: 89px 50px 0;
+
+    @include tab {
+        padding: 80px 50px 0;
+    }
+}

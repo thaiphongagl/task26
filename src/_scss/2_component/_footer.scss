@@ -1,0 +1,16 @@
+.c-footer {
+    margin-top: 85px;
+    padding-bottom: 80px;
+
+    @include tab {
+        margin-top: 80px;
+    }
+
+    .c-footer__link {
+        text-align: center;
+        display: block;
+    }
+
+    .c-footer__img {
+    }
+}
