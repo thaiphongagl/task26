@@ -2,3 +2,19 @@
 footer
 ------------------------------------------------------------*/
 
+.c-footer {
+    margin-top: 85px;
+    margin-bottom: 80px;
+    text-align: center;
+
+    @include sp {
+        margin-top: 33px;
+        margin-bottom: 30px;
+    }
+
+    .c-footer__img {
+        @include sp {
+            width: 104px;
+        }
+    }
+}

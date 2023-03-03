@@ -8,6 +8,10 @@
         flex-direction: column;
     }
 
+    @include sp {
+        padding: 20px 0 0;
+    }
+
     .c-access__map {
         flex: 0 1 50%;
         height: 701px;
@@ -16,6 +20,10 @@
             flex: unset;
             width: 100%;
             height: 390px;
+        }
+
+        @include sp {
+            height: 290px;
         }
     }
 
@@ -34,6 +42,11 @@
             width: 100%;
             min-height: 541px;
             padding: 50px;
+        }
+
+        @include sp {
+            padding: 31px 20px;
+            min-height: 291px;
         }
     }
 
@@ -54,6 +67,10 @@
             padding-left: 45px;
             padding-top: 0;
         }
+
+        @include sp {
+            padding-left: 32px;
+        }
     }
 
     .c-access__line {
@@ -65,6 +82,13 @@
         @include tab {
             margin-left: inherit;
         }
+
+        @include sp {
+            width: 37px;
+            height: 1px;
+            margin-top: 8px;
+            margin-left: 51px;
+        }
     }
 
     .c-access__des {
@@ -75,6 +99,12 @@
 
         @include tab {
             transform: none;
+        }
+
+        @include sp {
+            font-size: 1.4rem;
+            margin-top: 11px;
+            transform: translateX(9px);
         }
     }
 
@@ -94,10 +124,20 @@
         @include tab {
             margin: 40px auto 0;
         }
+
+        @include sp {
+            font-size: 1.3rem;
+            padding-left: 14px;
+            margin: 42px auto 0;
+        }
     }
 
     .c-access__detail {
         margin-bottom: 12px;
+
+        @include sp {
+            margin-bottom: 6px;
+        }
     }
 
     .c-access__label {
@@ -109,10 +149,19 @@
         margin-right: 17px;
         text-align: center;
         line-height: 47px;
+
+        @include sp {
+            width: 60px;
+            height: 24px;
+            line-height: 1.8;
+        }
     }
 
     .c-access__content {
         display: inline-block;
+        @include sp {
+            transform: translateX(-10px);
+        }
     }
 
     .c-access__note {
@@ -123,6 +172,12 @@
         @include pc {
             margin: 0 auto;
             width: fit-content;
+        }
+
+        @include sp {
+            font-size: 0.8rem;
+            margin-top: 6px;
+            margin-left: calc(44.4% - 43px);
         }
     }
 }

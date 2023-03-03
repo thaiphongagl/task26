@@ -1,12 +1,4 @@
 {
-  "linklists": {
-    "main": [
-      {
-        "title": "Home",
-        "url": "/"
-      }
-    ]
-  },
   "worries": [
     {
       "id": "01",
@@ -110,13 +102,15 @@
       "planImageId": 1,
       "planImageUrl": "./assets/img/plan__image1f.jpg",
       "planImageUrlSp": "./assets/img/plan__image1f-sp.jpg",
-      "planImageLabel": "1F"
+      "planImageLabel": "1F",
+      "planImageClass": "left"
     },
     {
       "planImageId": 2,
       "planImageUrl": "./assets/img/plan__image2f.jpg",
       "planImageUrlSp": "./assets/img/plan__image2f.jpg",
-      "planImageLabel": "2F"
+      "planImageLabel": "2F",
+      "planImageClass": "right"
     }
   ],
   "planInfors": [

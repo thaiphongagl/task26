@@ -1,7 +1,7 @@
 <%- include('_layouts/layout', { title: 'Coco MGM Design' }); -%>
 
   <!-- @meta -->
-  <meta name="description" content="Coco MGM Design" />
+  <meta name="description" content="Coco MGM Design">
   <!-- @@meta -->
 
   <!-- @content -->
@@ -11,14 +11,14 @@
     <section class="c-mainvisual">
       <picture>
         <source media="(max-width: 767px)" srcset="./assets/img/mainvisual__background-sp.jpg">
-        <img class="c-mainvisual__background" src="./assets/img/mainvisual__background.jpg" alt="「こんな家に住みたい」をカタチにした家" />
+        <img class="c-mainvisual__background" src="./assets/img/mainvisual__background.jpg" alt="「こんな家に住みたい」をカタチにした家">
       </picture>
 
       <div class="c-mainvisual__contentwrapper">
         <a href="./">
           <picture>
             <source media="(max-width: 767px)" srcset="./assets/img/mainvisual__logo-sp.png">
-            <img class="c-mainvisual__logo" src="./assets/img/mainvisual__logo.png" alt="Coco MGM Design" />
+            <img class="c-mainvisual__logo" src="./assets/img/mainvisual__logo.png" alt="Coco MGM Design">
           </picture>
         </a>
         <h1 class="c-mainvisual__heading">
@@ -26,7 +26,7 @@
         </h1>
         <picture>
           <source media="(max-width: 767px)" srcset="./assets/img/mainvisual__status-sp.png">
-          <img class="c-mainvisual__status" src="./assets/img/mainvisual__status.png" alt="「こんな家に住みたい」をカタチにした家" />
+          <img class="c-mainvisual__status" src="./assets/img/mainvisual__status.png" alt="「こんな家に住みたい」をカタチにした家">
         </picture>
       </div>
     </section>
@@ -60,7 +60,7 @@
                   <% } %>
               </div>
             </div>
-            <%}); %>
+            <% }) %>
         </div>
       </section>
 
@@ -79,11 +79,11 @@
               <div class="c-box__item">
                 <div class="c-box__content">
                   <img src="<%= benefit.benefitNumberBullet %>" alt="<%- benefit.benefitHeading %>"
-                    class="c-box__numberbullet" />
+                    class="c-box__numberbullet">
                   <h3 class="c-box__title">
                     <%- benefit.benefitHeading %>
                       <img src="./assets/img/benefits__iconshine.svg" alt="<%- benefit.benefitHeading %>"
-                        class="c-box__iconshine" />
+                        class="c-box__iconshine">
                   </h3>
                   <p class="c-box__desc">
                     <%= benefit.benefitDesc %>
@@ -92,7 +92,7 @@
 
                 <picture>
                   <source media="(max-width: 767px)" srcset="<%= benefit.benefitImgSp %>">
-                  <img src="<%= benefit.benefitImg %>" alt="<%- benefit.benefitHeading %>" class="c-box__img" />
+                  <img src="<%= benefit.benefitImg %>" alt="<%- benefit.benefitHeading %>" class="c-box__img">
                 </picture>
               </div>
               <% }) %>
@@ -105,10 +105,10 @@
     <!-- *********************************** -->
     <section class="c-recs">
       <div class="c-recs__wrapper">
-          <div class="c-recs__wrapperhide">
+        <div class="c-recs__wrapperhide">
           <div class="c-recs__headinglogo">
             <div class="c-recs__headinglogoblock">
-              <img class="c-recs__logo" src="./assets/img/recs__logo.png" alt="RECOMMENDED POINT" />
+              <img class="c-recs__logo" src="./assets/img/recs__logo.png" alt="RECOMMENDED POINT">
             </div>
             <div class="c-recs__headingblock">
               <h2 class="c-recs__heading">RECOMMENDED POINT</h2>
@@ -117,15 +117,15 @@
               </h3>
             </div>
           </div>
-  
+
           <div class="c-box c-box--4">
             <% recs.forEach(rec=> { %>
               <a href="#" class="c-box__item">
                 <picture>
                   <source media="(max-width: 767px)" srcset="<%= rec.recImgSp %>">
-                  <img src="<%= rec.recImg %>" alt="<%= rec.recHeading %>" class="c-box__img" />
+                  <img src="<%= rec.recImg %>" alt="<%= rec.recHeading %>" class="c-box__img">
                 </picture>
-  
+
                 <div class="c-box__content">
                   <h3 class="c-box__title">
                     <%= rec.recHeading %>
@@ -137,7 +137,7 @@
               </a>
               <% }) %>
           </div>
-  
+
           <img src="./_public/assets/img/recs__logo-sp.png" alt="RECOMMENDED POINT" class="c-recs__logosp">
         </div>
       </div>
@@ -149,8 +149,8 @@
       <div class="l-container--1200">
         <a href="#">
           <picture>
-            <source media="(max-width: 767px)" srcset="./assets/img/voucher__img-sp.jpg" />
-            <img src="./assets/img/voucher__img.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント" class="c-voucher__img" />
+            <source media="(max-width: 767px)" srcset="./assets/img/voucher__img-sp.jpg">
+            <img src="./assets/img/voucher__img.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント" class="c-voucher__img">
           </picture>
         </a>
       </div>
@@ -164,33 +164,32 @@
           <% designs.forEach(design=> { %>
             <div class="c-design__slickblock">
               <picture>
-                <source media="(max-width: )" srcset="" />
-                <img src="<%= design.designImg %>" alt="Design" class="c-design__slickimg" />
+                <img src="<%= design.designImg %>" alt="Design" class="c-design__slickimg">
               </picture>
             </div>
             <% }); %>
         </div>
 
         <div class="c-design__slickcontroller">
-          <img src="./assets/img/design__prev.svg" alt="Design" class="c-design__btn c-design__prev" />
-          <img src="./assets/img/design__next.svg" alt="Design" class="c-design__btn c-design__next" />
+          <img src="./assets/img/design__prev.svg" alt="Design" class="c-design__btn c-design__prev">
+          <img src="./assets/img/design__next.svg" alt="Design" class="c-design__btn c-design__next">
         </div>
       </div>
 
       <div class="c-design__textvideo">
         <div class="c-design__text">
           <h2 class="c-title c-design__heading">DESIGN</h2>
-          <hr class="c-titleline c-design__line" />
+          <hr class="c-titleline c-design__line">
           <h3 class="c-design__sub">
-            シンプルで美しいデザイン、<br />
+            シンプルで美しいデザイン、<br>
             いつまでも・誰にでも愛される空間に。
           </h3>
 
           <p class="c-design__desc">
-            長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br />
-            壁の色を白で統一したシンプルな間取り。<br />
-            余計な装飾は施さず、こだわりの家具やインテリアを <br />
-            あなた色に合わせてコーディネートを楽しめる <br />
+            長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br>
+            壁の色を白で統一したシンプルな間取り。<br>
+            余計な装飾は施さず、こだわりの家具やインテリアを <br>
+            あなた色に合わせてコーディネートを楽しめる <br>
             年齢や性別を意識しない誰にでも愛される空間です。
           </p>
         </div>
@@ -211,16 +210,16 @@
       <div class="c-plan__wrapper l-container--1200">
         <div class="c-plan__title">
           <h2 class="c-title c-plan__heading">PLAN</h2>
-          <hr class="c-titleline c-plan__line" />
+          <hr class="c-titleline c-plan__line">
         </div>
 
         <div class="c-plan__images">
           <% planImages.forEach(planImage=> { %>
-            <div class="c-plan__image">
+            <div class="c-plan__image c-plan__image<%= planImage.planImageClass %>">
               <figure>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="<%= planImage.planImageUrlSp %>" />
-                  <img src="<%= planImage.planImageUrl %>" alt="plan" class="c-plan__src" />
+                  <source media="(max-width: 767px)" srcset="<%= planImage.planImageUrlSp %>">
+                  <img src="<%= planImage.planImageUrl %>" alt="plan" class="c-plan__src">
                 </picture>
                 <figcaption class="c-plan__caption">
                   <span class="c-plan__label">
@@ -273,7 +272,7 @@
     <section class="c-finance">
       <div class="c-finance__title">
         <h2 class="c-title c-finance__heading">Finance</h2>
-        <hr class="c-titleline c-finance__line" />
+        <hr class="c-titleline c-finance__line">
       </div>
 
       <div class="c-finance__loan">
@@ -368,7 +367,7 @@
       </div>
     </section>
 
-    <!-- Visitor -->
+    <!-- Access -->
     <!-- *********************************** -->
     <section class="c-access">
       <div class="c-access__map">
@@ -409,8 +408,8 @@
       <div class="l-container--1200">
         <a href="#">
           <picture>
-            <source media="(max-width: 767px)" srcset="" />
-            <img src="./assets/img/voucher__img.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント" class="c-voucher__img" />
+            <source media="(max-width: 767px)" srcset="./assets/img/voucher__img-sp.jpg">
+            <img src="./assets/img/voucher__img.jpg" alt="絶対オトク！1,000円分のQUOカードプレゼント" class="c-voucher__img">
           </picture>
         </a>
       </div>

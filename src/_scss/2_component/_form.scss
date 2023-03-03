@@ -5,6 +5,10 @@
         margin: 80px 50px 0;
     }
 
+    @include sp {
+        margin: 17px 28px 0;
+    }
+
     .c-form__link {
         height: 283px;
         color: #000;
@@ -16,10 +20,20 @@
         letter-spacing: 4px;
         align-items: center;
         justify-content: center;
+
+        @include sp {
+            font-size: 2.4rem;
+            height: 111px;
+            letter-spacing: 2.3px;
+        }
     }
 
     .c-form__text {
         margin-left: -5px;
         margin-top: 7px;
+
+        @include sp {
+            margin-left: 0;
+        }
     }
 }

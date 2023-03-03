@@ -2,7 +2,9 @@
     padding: 68px 0 0;
 
     @include sp {
-        padding: 57px 0 0;
+        margin-top: 57px;
+        padding: 0;
+        background-color: $secondary-color;
     }
 
     .c-recs__wrapper {
@@ -14,6 +16,7 @@
 
         @include sp {
             padding: 0 12px 24px;
+            max-width: 375px;
         }
     }
 
@@ -69,7 +72,7 @@
 
         @include sp {
             left: 43.3%;
-            width: 213px;
+            width: 57%;
             top: 87.2%;
         }
     }

@@ -108,16 +108,19 @@
             }
 
             @include sp {
+                .c-worries__idcase {
+                    margin-left: auto;
+                }
+
                 .c-worries__id {
                     padding-left: unset;
-                    left: 93%;
                     margin-top: -19px;
+                    transform: translate(2px, 2px);
                 }
 
                 .c-worries__case {
                     padding-left: unset;
-                    left: 93%;
-                    margin-left: 0;
+                    margin-left: 3px;
                     top: 56.4%;
                 }
 

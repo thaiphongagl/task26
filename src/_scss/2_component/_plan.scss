@@ -41,7 +41,6 @@
     .c-plan__images {
         display: flex;
         margin-top: 100px;
-        column-gap: 50px;
 
         @include tab {
             .c-plan__image {
@@ -62,8 +61,6 @@
 
         @include sp {
             margin-top: 47px;
-            // scale: 1.36;
-            column-gap: 0;
 
             .c-plan__image {
                 &:nth-child(1) {
@@ -110,6 +107,14 @@
                 margin-top: -12px;
                 margin-left: 14px;
             }
+        }
+    }
+
+    .c-plan__imageleft {
+        margin-right: 50px;
+
+        @include sp {
+            margin-right: 0;
         }
     }
 
@@ -236,8 +241,6 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                column-gap: 21px;
-                row-gap: 10px;
                 padding-left: 38px;
                 padding-top: 30px;
             }
@@ -252,10 +255,18 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                column-gap: 21px;
-                row-gap: 10px;
                 padding-left: 38px;
                 padding-top: 30px;
+            }
+        }
+
+        @include tab {
+            &:nth-child(3) {
+                .c-plan__links {
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
 
@@ -298,10 +309,16 @@
                 }
 
                 .c-plan__td {
-                    row-gap: 3px;
                     padding-left: 1px;
                     padding-top: 11px;
-                    column-gap: 8px;
+                }
+
+                .c-plan__links {
+                    margin-right: 8px;
+
+                    &:nth-child(1) {
+                        margin-bottom: 3px;
+                    }
                 }
             }
 
@@ -317,7 +334,10 @@
 
                 .c-plan__td {
                     padding-left: 1px;
-                    column-gap: 8px;
+                }
+
+                .c-plan__links {
+                    margin-right: 8px;
                 }
             }
         }
@@ -356,6 +376,7 @@
 
     .c-plan__links {
         display: inline-block;
+        margin-right: 21px;
     }
 
     .c-plan__link {
