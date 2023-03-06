@@ -67,7 +67,7 @@
                     margin-left: unset;
 
                     .c-plan__src {
-                        scale: 0.92;
+                        transform: scale(0.92);
                         margin-top: -32px;
                         margin-left: -17px;
                     }
@@ -79,7 +79,7 @@
                     margin-left: inherit;
 
                     .c-plan__src {
-                        scale: 1.05;
+                        transform: scale(1.05);
                         transform: translateX(3px);
                     }
 

@@ -157,7 +157,7 @@
                 order: 1;
 
                 .c-visitor__icon {
-                    scale: 0.61;
+                    transform: scale(0.61);
                     margin-top: 2px;
                     margin-left: 6px;
                 }
@@ -166,7 +166,7 @@
                     margin-top: -5px;
                     margin-left: 6px;
                     letter-spacing: 0.6px;
-                    scale: 0.8;
+                    transform: scale(0.8);
                     line-height: 1.6;
 
                     &:nth-of-type(1) {
@@ -180,7 +180,7 @@
             .c-visitor__icon {
                 margin-top: 20px;
                 margin-left: -19px;
-                scale: 0.92;
+                transform: scale(0.92);
             }
 
             .c-visitor__description {
@@ -195,7 +195,7 @@
                 .c-visitor__icon {
                     margin-top: 28px;
                     margin-left: 0;
-                    scale: 0.92;
+                    transform: scale(0.92);
                 }
 
                 .c-visitor__description {
@@ -214,7 +214,7 @@
                 .c-visitor__icon {
                     margin-top: -5px;
                     margin-left: 18px;
-                    scale: 0.56;
+                    transform: scale(0.56);
                 }
 
                 .c-visitor__description {
@@ -234,7 +234,7 @@
             .c-visitor__icon {
                 margin-top: 30px;
                 margin-left: -16px;
-                scale: 1.23;
+                transform: scale(1.23);
             }
 
             .c-visitor__description {
@@ -249,7 +249,7 @@
                 .c-visitor__icon {
                     margin-top: 30px;
                     margin-left: 0;
-                    scale: 1;
+                    transform: scale(1);
                 }
 
                 .c-visitor__description {
@@ -266,7 +266,7 @@
                 order: 5;
 
                 .c-visitor__icon {
-                    scale: 0.75;
+                    transform: scale(0.75);
                     margin-top: 9px;
                     margin-left: 9px;
                 }
@@ -288,7 +288,7 @@
             .c-visitor__icon {
                 margin-top: 64px;
                 margin-left: -16px;
-                scale: 1.46;
+                transform: scale(1.46);
             }
 
             .c-visitor__description {
@@ -303,7 +303,7 @@
                 .c-visitor__icon {
                     margin-top: 64px;
                     margin-left: 0;
-                    scale: 1.1;
+                    transform: scale(1.1);
                 }
 
                 .c-visitor__description {
@@ -321,7 +321,7 @@
 
                 .c-visitor__icon {
                     margin-top: 39px;
-                    scale: 0.89;
+                    transform: scale(0.89);
                     margin-left: 20px;
                 }
 
@@ -363,7 +363,7 @@
                 order: 9;
 
                 .c-visitor__icon {
-                    scale: 0.6;
+                    transform: scale(0.6);
                     margin-top: 8px;
                     margin-left: 8px;
                 }
@@ -410,7 +410,7 @@
                 order: 3;
 
                 .c-visitor__icon {
-                    scale: 0.6;
+                    transform: scale(0.6);
                     margin-top: -11px;
                     margin-left: 6px;
                 }
@@ -431,7 +431,7 @@
             .c-visitor__icon {
                 margin-top: 17px;
                 margin-left: -19px;
-                scale: 0.83;
+                transform: scale(0.83);
             }
 
             .c-visitor__description {
@@ -446,7 +446,7 @@
                 .c-visitor__icon {
                     margin-top: 27px;
                     margin-left: 0;
-                    scale: 0.9;
+                    transform: scale(0.9);
                 }
 
                 .c-visitor__description {
@@ -464,7 +464,7 @@
                 .c-visitor__icon {
                     margin-top: -8px;
                     margin-left: 18px;
-                    scale: 0.5;
+                    transform: scale(0.5);
                 }
 
                 .c-visitor__description {
@@ -483,7 +483,7 @@
             .c-visitor__icon {
                 margin-top: 29px;
                 margin-left: -18px;
-                scale: 1.1;
+                transform: scale(1.1);
             }
 
             .c-visitor__description {
@@ -498,7 +498,7 @@
                 .c-visitor__icon {
                     margin-top: 39px;
                     margin-left: 0;
-                    scale: 1;
+                    transform: scale(1);
                 }
 
                 .c-visitor__description {
@@ -514,7 +514,7 @@
                 order: 7;
 
                 .c-visitor__icon {
-                    scale: 0.65;
+                    transform: scale(0.65);
                     margin-top: -1px;
                     margin-left: 9px;
                 }
@@ -535,7 +535,7 @@
             .c-visitor__icon {
                 margin-top: 32px;
                 margin-left: -15px;
-                scale: 1.2;
+                transform: scale(1.2);
             }
 
             .c-visitor__description {
@@ -550,7 +550,7 @@
                 .c-visitor__icon {
                     margin-top: 42px;
                     margin-left: 0;
-                    scale: 1;
+                    transform: scale(1);
                 }
 
                 .c-visitor__description {
@@ -566,7 +566,7 @@
                 order: 8;
 
                 .c-visitor__icon {
-                    scale: 0.72;
+                    transform: scale(0.72);
                     margin-left: 20px;
                     margin-top: 2px;
                 }
@@ -587,7 +587,7 @@
             .c-visitor__icon {
                 margin-top: 31px;
                 margin-left: 13px;
-                scale: 1.14;
+                transform: scale(1.14);
             }
 
             .c-visitor__description {
@@ -602,7 +602,7 @@
                 .c-visitor__icon {
                     margin-top: 31px;
                     margin-left: 0;
-                    scale: 1;
+                    transform: scale(1);
                 }
 
                 .c-visitor__description {
@@ -618,7 +618,7 @@
                 order: 10;
 
                 .c-visitor__icon {
-                    scale: 0.69;
+                    transform: scale(0.69);
                     margin-top: 16px;
                     margin-left: 3px;
                 }
@@ -754,7 +754,7 @@
 
         @include sp {
             font-size: 1.1rem;
-            scale: 0.8;
+            transform: scale(0.8);
         }
     }
 }
