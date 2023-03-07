@@ -97,6 +97,7 @@
         color: #fff;
         position: relative;
         background-color: #565f64;
+        display: block;
 
         @include pc {
             width: calc((100% - 90px) / 5);

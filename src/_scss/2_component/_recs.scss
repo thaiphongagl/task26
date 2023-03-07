@@ -71,7 +71,7 @@
         }
 
         @include sp {
-            left: 43.3%;
+            left: 43.1%;
             width: 57%;
             top: 87.2%;
         }
@@ -97,7 +97,7 @@
         color: #000;
         font-weight: 300;
         font-family: $special-fonts2;
-        letter-spacing: 7.1px;
+        letter-spacing: 8.1px;
         transform: translate(-8px, 5px);
 
         @include pc {
@@ -110,7 +110,7 @@
 
         @include sp {
             font-size: 3.1rem;
-            letter-spacing: 2.44px;
+            letter-spacing: 2.7px;
             transform: translate(-8px, 6px);
         }
     }

@@ -1,9 +1,9 @@
 .c-mainvisual {
     position: relative;
     
-    @include sp {
-        padding-top: 35px;
-    }
+    // @include sp {
+    //     padding-top: 35px;
+    // }
 
     .c-mainvisual__background {
         width: 100%;
@@ -34,7 +34,7 @@
         @include sp {
             width: 217px;
             height: 230px;
-            top: 25%;
+            top: 16.7%;
             right: 9%;
         }
     }

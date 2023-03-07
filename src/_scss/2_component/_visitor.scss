@@ -55,7 +55,7 @@
         width: 238px;
         height: 52px;
         border-radius: 23px;
-        line-height: 51px;
+        line-height: 2.2;
         transform: translate(0, -4px);
 
         @include tab {
@@ -68,7 +68,7 @@
             font-size: 1.2rem;
             width: 120px;
             height: 26px;
-            line-height: 26px;
+            line-height: 2.2;
             margin-bottom: 7px;
         }
     }
