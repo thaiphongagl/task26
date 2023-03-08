@@ -69,7 +69,7 @@
                 }
 
                 .c-box__numberbullet {
-                    transform: translate(-53px, -26px);
+                    transform: scale(0.5) translate(-53px, -26px);
                 }
 
                 .c-box__title {
@@ -118,7 +118,7 @@
 
             @include sp {
                 .c-box__numberbullet {
-                    transform: translate(-53px, -25px);
+                    transform: scale(0.5) translate(-53px, -25px);
                 }
 
                 .c-box__iconshine {
@@ -191,7 +191,7 @@
         }
 
         @include sp {
-            transform: scale(0.5) translate(-41px, -25px) !important;
+            transform: scale(0.5) translate(-41px, -25px);
         }
     }
 
@@ -283,7 +283,6 @@
 
     @include sp {
         padding: 74px 0 99px;
-        // row-gap: 16px;
         max-width: 375px;
         width: 100%;
         justify-content: space-between;

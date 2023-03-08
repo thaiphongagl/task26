@@ -164,6 +164,7 @@
           <% designs.forEach(design=> { %>
             <div class="c-design__slickblock">
               <picture>
+                <source media="(max-width: 767px)" srcset="<%= design.designImgSp %>">
                 <img src="<%= design.designImg %>" alt="Design" class="c-design__slickimg">
               </picture>
             </div>
@@ -318,17 +319,18 @@
 
       <div class="c-web__steps">
         <% steps.forEach(step=> { %>
-          <div class="c-web__step">
+          <a href="#" class="c-web__step">
             <div class="c-web__content">
               <img src="<%= step.stepIcon %>" alt="<%= step.stepTitle %>" class="c-web__icon">
               <p class="c-web__name">
                 <%= step.stepTitle %>
               </p>
+              <hr class="c-web__line">
               <p class="c-web__desc">
                 <%= step.stepDesc %>
               </p>
             </div>
-          </div>
+          </a>
           <% }) %>
       </div>
     </section>
@@ -394,9 +396,9 @@
                 </p>
               </div>
               <% } )%>
+                <p class="c-access__note">※車でお越しの際は、ナビで上記住所を設定してください。</p>
           </div>
 
-          <p class="c-access__note">※車でお越しの際は、ナビで上記住所を設定してください。</p>
         </div>
       </div>
     </section>

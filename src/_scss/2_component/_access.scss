@@ -45,7 +45,7 @@
         }
 
         @include sp {
-            padding: 31px 20px;
+            padding: 31px 10px;
             min-height: 291px;
         }
     }
@@ -111,11 +111,9 @@
     .c-access__details {
         font-size: 2.5rem;
         margin: 86px auto 0;
-        width: fit-content;
-
-        @include pconly {
-            margin: 86px auto 0 182px;
-        }
+        padding: 0 16px 0 9px;
+        max-width: 612px;
+        width: 100%;
 
         @include pc {
             font-size: 2rem;
@@ -123,12 +121,15 @@
 
         @include tab {
             margin: 40px auto 0;
+            max-width: 533px;
         }
 
         @include sp {
             font-size: 1.3rem;
-            padding-left: 14px;
+            padding: unset;
+            padding-left: 34px;
             margin: 42px auto 0;
+            max-width: 320px;
         }
     }
 
@@ -167,17 +168,21 @@
     .c-access__note {
         font-size: 1.5rem;
         margin-top: 13px;
-        margin-left: calc(44.4% - 96px);
+        margin-left: calc(41.4% - 96px);
 
         @include pc {
-            margin: 0 auto;
-            width: fit-content;
+            margin-left: 145px;
+            font-size: 1.2rem;
+        }
+
+        @include tab {
+            margin-left: 145px;
         }
 
         @include sp {
             font-size: 0.8rem;
             margin-top: 6px;
-            margin-left: calc(44.4% - 43px);
+            margin-left: 65px;
         }
     }
 }

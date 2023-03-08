@@ -169,7 +169,7 @@
 
             @include sp {
                 .c-worries__id {
-                    margin-top: -15px;
+                    margin-top: -16px;
                     padding-left: 24px;
                 }
 
@@ -211,7 +211,7 @@
             &:nth-child(2) {
                 .c-worries__questionnote {
                     &::before {
-                        left: 66%;
+                        left: 68%;
                         border-bottom: 31px solid transparent;
                         border-top: 13px solid transparent;
                         border-left: 14px solid #000;
@@ -300,7 +300,6 @@
         font-weight: 700;
         background-color: #000;
         border-radius: 10px;
-        // height: 124px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -313,7 +312,6 @@
 
         @include sp {
             font-size: 1.7rem;
-            // height: 87px;
             margin-top: -38px;
             margin-left: 6px;
             width: 101%;

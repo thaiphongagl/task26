@@ -74,27 +74,33 @@
   "designs": [
     {
       "designId": 1,
-      "designImg": "./assets/img/design__slick01.jpg"
+      "designImg": "./assets/img/design__slick01.jpg",
+      "designImgSp": "./assets/img/design__slick01-sp.png"
     },
     {
       "designId": 2,
-      "designImg": "./assets/img/design__slick02.jpg"
+      "designImg": "./assets/img/design__slick02.jpg",
+      "designImgSp": "./assets/img/design__slick02.jpg"
     },
     {
       "designId": 3,
-      "designImg": "./assets/img/design__slick03.jpg"
+      "designImg": "./assets/img/design__slick03.jpg",
+      "designImgSp": "./assets/img/design__slick03.jpg"
     },
     {
       "designId": 4,
-      "designImg": "./assets/img/design__slick04.jpg"
+      "designImg": "./assets/img/design__slick04.jpg",
+      "designImgSp": "./assets/img/design__slick04.jpg"
     },
     {
       "designId": 5,
-      "designImg": "./assets/img/design__slick05.jpg"
+      "designImg": "./assets/img/design__slick05.jpg",
+      "designImgSp": "./assets/img/design__slick05.jpg"
     },
     {
       "designId": 6,
-      "designImg": "./assets/img/design__slick06.jpg"
+      "designImg": "./assets/img/design__slick06.jpg",
+      "designImgSp": "./assets/img/design__slick06.jpg"
     }
   ],
   "planImages": [

@@ -27,13 +27,13 @@
 }
 
 @mixin pconly {
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1025px) {
         @content;
     }
 }
 
 @mixin pc {
-    @media only screen and (min-width: 1024px) and (max-width: 1368px) {
+    @media only screen and (min-width: 1025px) and (max-width: 1368px) {
         @content;
     }
 }

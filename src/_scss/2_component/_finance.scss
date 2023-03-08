@@ -7,7 +7,7 @@
     }
 
     @include sp {
-        padding: 34px 36px 61px;
+        padding: 34px 20px 61px;
     }
 
     .c-finance__title {
@@ -68,7 +68,6 @@
         margin: 46px auto 0;
         max-width: 1274px;
         width: 100%;
-        // gap: 5%;
         align-items: center;
         justify-content: space-between;
 
@@ -208,7 +207,7 @@
         @include sp {
             height: 100px;
             width: 100px;
-            right: -7.2%;
+            right: calc(-51.4% + 134px);
 
             &::before {
                 border-left: 1px solid transparent;
