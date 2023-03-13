@@ -16,7 +16,7 @@
         font-weight: 400;
         color: #000;
         text-align: center;
-        transform: translateX(16px);
+        transform: translate(16px, 0px);
         font-feature-settings: "falt";
 
         @include tab {
@@ -307,7 +307,7 @@
         font-feature-settings: "falt";
         margin-top: -56px;
         letter-spacing: -1.3px;
-        padding: 44px 20px;
+        padding: 42px 20px 47px;
         text-align: center;
 
         @include sp {

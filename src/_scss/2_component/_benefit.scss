@@ -20,7 +20,7 @@
         text-align: center;
 
         @include pconly {
-            transform: translate(21px, 1px);
+            transform: translate(21px, 0);
         }
 
         @include sp {

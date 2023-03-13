@@ -23,10 +23,16 @@
     .c-web__heading {
         font-size: 3.4rem;
         font-weight: 400;
+        transform: translate(0, -2px);
+
+        @include tab {
+            transform: none;
+        }
 
         @include sp {
             font-size: 1.7rem;
             margin-top: 2px;
+            transform: none;
         }
     }
 
@@ -48,7 +54,7 @@
         line-height: 1.39;
 
         &:nth-of-type(1) {
-            margin-top: 26px;
+            margin-top: 23px;
             margin-left: -15px;
 
             @include tab {
@@ -66,7 +72,7 @@
     }
 
     .c-web__steps {
-        margin-top: 72px;
+        margin-top: 75px;
         display: flex;
         justify-content: space-between;
         padding-left: 1.1%;

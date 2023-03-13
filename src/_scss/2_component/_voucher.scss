@@ -4,6 +4,18 @@
     @include sp {
         padding: 61px 28px 0;
     }
+
+    .c-voucher__img {
+        transform: translate(4px, -2px);
+
+        @include tab {
+            transform: none;
+        }
+
+        @include sp {
+            transform: none;
+        }
+    }
 }
 
 .c-voucher--b {
@@ -16,5 +28,17 @@
 
     @include sp {
         padding: 28px 27px 0 28px;
+    }
+
+    .c-voucher__img {
+        transform: translate(6px, -2px);
+
+        @include tab {
+            transform: none;
+        }
+
+        @include sp {
+            transform: none;
+        }
     }
 }

@@ -1,5 +1,5 @@
 .c-finance {
-    padding: 92px 5% 110px;
+    padding: 92px 5% 111px;
     background-color: $secondary-color;
 
     @include tab {
@@ -38,7 +38,7 @@
         align-items: center;
         height: 64px;
         width: 409px;
-        transform: translate(17px, 0);
+        transform: translate(17px, -1px);
 
         @include sp {
             margin: 28px auto 0;
@@ -65,7 +65,7 @@
 
     .c-finance__content {
         display: flex;
-        margin: 46px auto 0;
+        margin: 45px auto 0;
         max-width: 1274px;
         width: 100%;
         align-items: center;

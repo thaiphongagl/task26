@@ -98,7 +98,7 @@
         font-weight: 300;
         font-family: $special-fonts2;
         letter-spacing: 8.1px;
-        transform: translate(-8px, 5px);
+        transform: translate(-6px, 3px);
 
         @include pc {
             font-size: 5.6rem;
@@ -135,7 +135,7 @@
     .c-recs__subheading {
         font-size: 3.4rem;
         font-weight: 400;
-        transform: translate(-4px, -4px);
+        transform: translate(-4px, -5px);
 
         @include tab {
             font-size: 3rem;

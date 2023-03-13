@@ -13,15 +13,15 @@
             flex-direction: row-reverse;
 
             .c-box__img {
-                transform: translate(15px, -1px);
+                transform: translate(15px, -3px);
             }
 
             .c-box__numberbullet {
-                transform: translate(42px, -29px);
+                transform: translate(42px, -32px);
             }
 
             .c-box__title {
-                transform: translate(29px, -24px);
+                transform: translate(29px, -25px);
             }
 
             .c-box__highlight {
@@ -35,7 +35,7 @@
             }
 
             .c-box__desc {
-                transform: translate(28px, -1px);
+                transform: translate(28px, -3px);
             }
 
             @include tab {
@@ -184,7 +184,7 @@
 
     .c-box__numberbullet {
         width: 89px;
-        transform: translate(14px, -28px);
+        transform: translate(14px, -31px);
 
         @include tab {
             transform: translate(20px, 10px);
@@ -199,7 +199,7 @@
         font-size: 2.8rem;
         font-weight: 700;
         margin-left: 95px;
-        transform: translate(0, -23px);
+        transform: translate(0, -26px);
         position: relative;
 
         @include sp {
@@ -257,7 +257,7 @@
     }
 
     .c-box__img {
-        transform: translate(13px, 0);
+        transform: translate(13px, -2px);
 
         @include tab {
             transform: none;
@@ -338,15 +338,19 @@
             }
 
             .c-box__title {
-                transform: translate(-3px, 0);
+                transform: translate(-4px, -3px);
             }
 
             .c-box__desc {
-                transform: none;
+                transform: translate(-3px, -1px);
             }
 
             @include tab {
                 .c-box__title {
+                    transform: none;
+                }
+
+                .c-box__desc {
                     transform: none;
                 }
             }
@@ -369,17 +373,27 @@
                     letter-spacing: 0.4px;
                     line-height: 1.28;
                     margin-top: 7px;
+                    transform: none;
+                    
                 }
             }
         }
 
         &:nth-child(3) {
             .c-box__title {
-                transform: translate(-1px, -2px);
+                transform: translate(-4px, -2px);
+            }
+
+            .c-box__desc {
+                transform: translate(-2px, -1px);
             }
 
             @include tab {
                 .c-box__title {
+                    transform: none;
+                }
+
+                .c-box__desc {
                     transform: none;
                 }
             }
@@ -395,17 +409,22 @@
                     margin-left: 0;
                     line-height: 1.3;
                     margin-top: 6px;
+                    transform: none;
                 }
             }
         }
 
         &:nth-child(4) {
             .c-box__img {
-                transform: translate(1px, -1px);
+                transform: translate(-4px, -1px);
             }
 
             .c-box__title {
-                transform: translate(0, -2px);
+                transform: translate(-4px, -2px);
+            }
+
+            .c-box__desc {
+                transform: translate(-2px, -1px);
             }
 
             @include tab {
@@ -414,6 +433,10 @@
                 }
 
                 .c-box__title {
+                    transform: none;
+                }
+
+                .c-box__desc {
                     transform: none;
                 }
             }
@@ -427,6 +450,7 @@
 
                 .c-box__desc {
                     letter-spacing: 0.23px;
+                    transform: none;
                 }
             }
         }
